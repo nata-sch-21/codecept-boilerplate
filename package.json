@@ -1,0 +1,33 @@
+{
+  "name": "codecept-boilerplate",
+  "version": "1.0.0",
+  "description": "The boilerplate for automatization tests with CodeceptJS and selenium-standalone",
+  "main": "index.js",
+  "scripts": {
+    "init": "./node_modules/.bin/selenium-standalone install",
+    "server": "./node_modules/.bin/selenium-standalone start",
+    "test": "./node_modules/.bin/codeceptjs run --steps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nata-sch-21/codecept-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "automatization",
+    "tests",
+    "codeceptjs-webdriverio",
+    "CodeceptJS",
+    "selenium-standalone"
+  ],
+  "author": "Natalya Shostak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nata-sch-21/codecept-boilerplate/issues"
+  },
+  "homepage": "https://github.com/nata-sch-21/codecept-boilerplate#readme",
+  "devDependencies": {
+    "codeceptjs-webdriverio": "^1.1.0",
+    "selenium-standalone": "^6.12.0"
+  }
+}
