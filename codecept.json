@@ -1,5 +1,5 @@
 {
-  "tests": "./tests/*_test.js",
+  "tests": "./tests/**/*_test.js",
   "timeout": 10000,
   "output": "./output",
   "helpers": {
@@ -19,6 +19,10 @@
     "I": "./custom_steps/steps_file.js"
   },
   "bootstrap": false,
-  "mocha": {},
-  "name": "codecept-boilerplate"
+  "mocha": {
+    "reporterOptions": {
+      "reportDir": "output"
+    }
+  },
+  "name": "ui-tests duckduckgo"
 }

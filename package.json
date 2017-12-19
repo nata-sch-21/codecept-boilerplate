@@ -4,9 +4,11 @@
   "description": "The boilerplate for automatization tests with CodeceptJS and selenium-standalone",
   "main": "index.js",
   "scripts": {
-    "init": "./node_modules/.bin/selenium-standalone install",
-    "server": "./node_modules/.bin/selenium-standalone start",
-    "test": "./node_modules/.bin/codeceptjs run --steps"
+    "init": "node index.js && ./node_modules/.bin/selenium-standalone install",
+    "start": "./node_modules/.bin/selenium-standalone start",
+    "test": "./node_modules/.bin/codeceptjs run --steps",
+    "new": "./node_modules/.bin/codeceptjs gt",
+    "report": "./node_modules/.bin/codeceptjs run --reporter mochawesome"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,8 @@
     "tests",
     "codeceptjs-webdriverio",
     "CodeceptJS",
-    "selenium-standalone"
+    "selenium-standalone",
+    "mochawesome"
   ],
   "author": "Natalya Shostak",
   "license": "ISC",
@@ -29,5 +32,11 @@
   "devDependencies": {
     "codeceptjs-webdriverio": "^1.1.0",
     "selenium-standalone": "^6.12.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "mochawesome": "^3.0.0"
   }
 }
