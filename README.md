@@ -8,22 +8,20 @@ The boilerplate for automatization tests with CodeceptJS and selenium-standalone
 
 ### Installing
 
-- Download packages
+- Install packages
 ```
-npm install
-npm install -g codeceptjs-webdriverio
+npm i
+npm i codeceptjs-webdriverio -g
+npm i selenium-standalone@latest -g
 ```
 - Create output directories
 ```
 node index.js
 ```
-- Install selenium-standalone server
-```
-npm i selenium-standalone@latest -g
-```
+
 ### Getting Started
 - Change configs in codecept.json 
-- Run following command and put filename of a new test
+- Create new test. Run following command and put filename of a new test
 ```
 npm run new
 or
