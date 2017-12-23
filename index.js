@@ -4,10 +4,12 @@ var dir = config.output;
 var dirReport = config.mocha.reporterOptions.reportDir;
 
 try {
+	// create output dir
 	if (!fs.existsSync(dir)){
 		fs.mkdirSync(dir);
 	}
 
+	//create report dir
 	if (!fs.existsSync(dirReport)){
 		fs.mkdirSync(dirReport);
 	}
