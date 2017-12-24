@@ -18,6 +18,10 @@ npm i selenium-standalone@latest -g
 ```
 node index.js
 ```
+- Install Selenium server
+```
+selenium-standalone install
+```
 
 ### Getting Started
 - Change configs in codecept.json 
